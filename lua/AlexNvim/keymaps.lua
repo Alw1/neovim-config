@@ -20,5 +20,5 @@ vim.keymap.set("n", "<S-Tab>", "<<", {desc="Detent"})
 vim.keymap.set("n", "<leader>y", '"+y')
 vim.keymap.set("v", "<leader>y", '"+y')
 vim.keymap.set("n", "<leader>y", '"+Y')
-
+vim.keymap.set("n", "<leader>yy", '"+yy')
 -- Make a keybind to wrap text in same character like () or {} 

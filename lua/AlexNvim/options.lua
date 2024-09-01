@@ -1,4 +1,3 @@
-
 local opt = vim.opt
 
 -- Enable numbers on side
@@ -9,22 +8,18 @@ opt.relativenumber = true
 opt.mouse = "a"
 
 opt.showmode = false
+	
+-- Number of tabs when using in Insert  
+opt.sts = 4
+opt.shiftwidth = 4
 
 -- Syncs Neovim an OS clipboards to make copy/pasting easier
 --vim.schedule(function()
---
-
 --	opt.clipboard = "unamedplus"
-
 --end)
---
-
 
 -- Enable break indent
 opt.breakindent = true
-
--- Save undo history to file
-opt.undofile = true
 
 -- Make searching case-insensitive unless specified
 opt.ignorecase = true
@@ -57,12 +52,10 @@ opt.scrolloff = 10
 -- Show which line your cursor is on
 opt.cursorline = true
 
+-- Fuck swapfiles
 opt.swapfile = false
 
-opt.swapfile = false
--- make a backup before overwritting file
+-- Make a backup when editing a file, put it in .nvimTmp/backupdir
 opt.backup = true
-
--- Make a backup file
---opt_global.backupdir = os.getenv("HOME") .. "/.nvimTmp/backupdir"
---opt.backupcopy = "auto"
+vim.opt_global.backupdir = os.getenv("HOME") .. "/.nvimTmp/backupdir"
+opt.backupcopy = "auto"
