@@ -12,6 +12,7 @@ opt.showmode = false
 -- Number of tabs when using in Insert  
 opt.sts = 4
 opt.shiftwidth = 4
+opt.tabstop = 4 
 
 -- Syncs Neovim an OS clipboards to make copy/pasting easier
 --vim.schedule(function()
@@ -29,11 +30,7 @@ opt.smartcase = true
 -- Displays which-key popup sooner
 opt.timeoutlen = 1000
 
--- Configure how new splits should be opened
-opt.splitright = true
-opt.splitbelow = true
-
--- Configure how new splits should be opened
+-- Configure how new splits should be opened 
 opt.splitright = true
 opt.splitbelow = true
 
