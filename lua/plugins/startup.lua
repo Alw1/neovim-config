@@ -4,14 +4,14 @@ return {
   opts = function()
   local logo = [[
               ▀████▀▄▄              ▄█ 
-                █▀    ▀▀▄▄▄▄▄    ▄▄▀▀█ 
-        ▄        █          ▀▀▀▀▄  ▄▀  
-       ▄▀ ▀▄      ▀▄              ▀▄▀  
+                █▀    ▀▀▄▄▄▄▄   ▄▄▄▀▀█ 
+        ▄        █          ▀▀▀▀   ▄▀  
+       ▄▀▀▀▄      ▀▄              ▀▄▀  
       ▄▀    █     █▀   ▄█▀▄      ▄█    
       ▀▄     ▀▄  █     ▀██▀     ██▄█   
        ▀▄    ▄▀ █   ▄██▄   ▄  ▄  ▀▀ █  
         █  ▄▀  █    ▀██▀    ▀▀ ▀▀  ▄▀  
-       █   █  █      ▄▄           ▄▀   
+       █   █  █                   ▄▀   
     ]]
 
     logo = string.rep("\n", 8) .. logo .. "\n\n"
@@ -30,6 +30,7 @@ return {
         center = {
           { action = function() telescope.find_files() end,              desc = " Find File",       icon = " ", key = "f" },
           { action = function() telescope.live_grep() end,               desc = " Find Text",       icon = " ", key = "g" },
+		  { action = "ene | startinsert",                                desc = " New File",        icon = " ", key = "n" },
           { action = function() vim.api.nvim_input("<cmd>Lazy<cr>") end, desc = " Open Lazy",	    icon = "󰒲 ", key = "l" }, 
           { action = function() vim.api.nvim_input("<cmd>qa<cr>") end,   desc = " Quit",            icon = " ", key = "q" },
         },
